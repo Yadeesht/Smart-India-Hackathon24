@@ -1,34 +1,28 @@
 -----------------------
 # README
 -----------------------
-Browny is a one page bootstrap 3 based resume/portfolio template.
+USING GUIDE:
+************
+1) In app.py load your model.
+2) In index.js, put your gemini AI api key, after creating one.
+3) install npm and node and flask before starting out.
+4) in your terminal typeout: "node index.js"    //make sure your cwd is set to the folder dir.
+5) run app.py.
+6) open "localhost:3000" in your browser.
 
 
-Template Info:
------------------------
-Name: 		Browny - Free Bootstrap One Page Portfolio Resume Tempalte
-Version: 	1.0
-Author: 	ThemeSINE
-Website: 	https://www.themesine.com/
+USAGE:
+********
+you can load an AI model (in mycase a plant disease detection AI) and upload a picture to the application the trained ml model (.h5 file) will predict the disease and sent the pridiction to gemini ai to generate content abour it.
 
+LANGUAGE:
+*********
+html (EJS), 
+css (Bootstrap)
+NODE js (express and fewe other dependencies)
+FLASK  (with few other dependencies)
 
-Changelog:
------------------------
-Version 1.0 14-05-2018
-- initial release 
-
-
-Credits:
------------------------
-- Twitter Bootstrap http://getbootstrap.com
-- jQuery http://jquery.org
-- Modernizr https://modernizr.com/
-- Sticky.js http://stickyjs.com/
-- JQuery easing https://github.com/gdsmith/jquery.easing
-- Bootsnav http://bootsnav.danurstrap.com/
-- Pexels https://www.pexels.com/
-- Unsplash https://unsplash.com/
-
-License:
------------------------
-This template is under Free License - https://www.themesine.com/license/
+CREDITS:
+********
+Me and my team built this applicaion for Smart India Hackathon.
+<will soon post the linkedIn post here>
