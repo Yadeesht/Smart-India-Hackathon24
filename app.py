@@ -7,8 +7,8 @@ import os
 
 print("Working in: ", os.getcwd())
 app = Flask(__name__)
-
-model = load_model('Wheat_model.h5')
+modelfilelocation = " " #your model file location
+model = load_model(modelfilelocation)
 
 target_size = (200, 200)
 CATEGORIES=["Wheat__Brown_Rust","Wheat__Healthy","Wheat__Yellow_Rust"]

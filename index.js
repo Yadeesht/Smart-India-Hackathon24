@@ -9,7 +9,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));
 app.use(express.static('public'));
 
-const GOOGLE_API_KEY = "AIzaSyDkwGsf5w7GOH9g2_FbOBUDAzqj5K-8i90";
+const GOOGLE_API_KEY = "XXXXXXXXX"; //include your api key here
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const genAI = new GoogleGenerativeAI(GOOGLE_API_KEY);
 
@@ -23,7 +23,6 @@ app.post('/upload', upload.single('image'), async (req, res) => {
   if (!req.file) {
     return res.status(400).send('No file uploaded.');
   }
-//testing lol
   const filePath = req.file.path;
 
   try {
